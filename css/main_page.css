@@ -1,0 +1,179 @@
+/*
+    @lvkaszus : lvkaszus.pl
+    Website Template
+
+    GitHub: https://github.com/lvkaszus/lvkaszuswebsite-template
+
+    I tried to make my code as less spaghetti as possible.
+*/
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+body {
+    background-color: black;
+    color: white;
+
+    font-family: Roboto-Regular;
+
+    background-image: url("../images/main_page-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    font-size: 28px;
+    line-height: 80px;
+    padding: 0 50px;
+    
+}
+
+nav ul {
+    float: right;
+    margin-right: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #a0a0a0;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+nav ul li a.current, nav ul li a.current:active, nav ul li a.current:hover {
+    color: #dedede;
+    background-color:rgba(110, 110, 110, 0.1)
+}
+
+nav ul li a:active, nav ul li a:hover {
+    background-color: rgba(110, 110, 110, 0.2);
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+
+.checkbutton {
+    font-size: 24px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+
+}
+
+@media (max-width: 952px){
+    label.logo {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 892px){
+    .checkbutton {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 40vh;
+        background: rgba(0, 60, 120, 0.8);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+        
+    }
+    nav ul li {
+        display: block;
+        margin: 35px 0;
+        line-height: 10px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+section {
+    height: calc(100vh - 95px);
+}
+
+.panel-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.panel-back {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.page_main-welcome {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.page_main-some_content_here {
+    width: 500px;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2px 0 0 3px;
+}
