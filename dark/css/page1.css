@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: Roboto-Regular;
-    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,7 +24,7 @@
 }
 
 body {
-    color: black;
+    color: white;
     font-family: Roboto-Regular;
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@ body {
 }
 
 nav {
-    background-color: #ffffff;
+    background-color: #000000;
     height: 80px;
     width: 100%;
 }
@@ -61,7 +61,7 @@ p.lvlogo {
     text-align: center;
     font-size: 32px;
     line-height: 80px;
-    color: #000000;
+    color: #ffffff;
     margin-right: 110px;
 }
 
@@ -71,7 +71,7 @@ nav ul {
     position: fixed;
     width: 215px;
     height: 100%;
-    background: #ffffff;
+    background: #000000;
     top: 80px;
     left: -100%;
     text-align: left;
@@ -86,7 +86,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000000;
+    color: #ffffff;
     font-size: 18px;
     padding: 10px 15px;
 }
@@ -96,7 +96,7 @@ nav ul li a {
 }
 
 nav ul li a.current, nav ul li a.current:active, nav ul li a.current:hover {
-    color: #555555;
+    color: #aaaaaa;
     background-color:rgba(110, 110, 110, 0.1)
 }
 
@@ -115,7 +115,7 @@ nav ul li a:active, nav ul li a:hover {
 
 .checkbutton {
     font-size: 22px;
-    color: #000000;
+    color: #ffffff;
     float: left;
     line-height: 80px;
     margin-left: 50px;
@@ -137,23 +137,23 @@ section {
 
 .panel-back {
     padding: 15px;
-    background-color: #ffffff;
+    background-color: #000000;
     border-radius: 10px;
     text-align: center;
 }
 
-.page_main-welcome {
+.page-title {
     font-size: 24px;
     margin-bottom: 25px;
 }
 
-.page_main-some_content_here {
+.page-some_content_here {
     width: 500px;
 }
 
 footer {
     text-align: center;
     font-size: 10px;
-    background-color: #ffffff;
+    background-color: #000000;
     padding: 2px 0 0 3px;
 }
